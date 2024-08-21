@@ -40,8 +40,8 @@ nav ul {
 }
 
 nav ul li {
-    color: #fff;
-    text-decoration: none;
+    color: #fff !important;
+    text-decoration: none !important;
     padding: 10px 15px;
     border-radius: 5px;
 }
