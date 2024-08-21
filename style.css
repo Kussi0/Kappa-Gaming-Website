@@ -39,13 +39,13 @@ nav ul {
     background-color: #333;
 }
 
-nav ul li {
+header .navi-menu a {
     color: #fff;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-nav ul li a:hover {
+.navi-menu a:hover {
     background-color: #555;
 }
