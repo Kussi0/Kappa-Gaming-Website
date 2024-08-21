@@ -30,7 +30,7 @@ header .user-actions a {
 }
 
 /* Navigation Bar */
-nav ul {
+.navi-menu {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
