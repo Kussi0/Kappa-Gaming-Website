@@ -42,6 +42,7 @@ header .user-actions a img {
 
 /* navigation icon styling */
 .navi-menu {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -56,8 +57,9 @@ header .user-actions a img {
 /* dropdown menu styling */
 .dropdown-menu {
     list-style-type: none;
-    background-color: #444;
+    background-color: #333;
     position: absolute; /* below the button */
+    top: 100%;
     right: 0;
     display: none; /* hide the dropdown */
     padding: 10px;
@@ -72,7 +74,9 @@ header .user-actions a img {
 }
 
 .dropdown-menu li a {
-    color: white;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-weight: bold;
     text-decoration: none;
     padding: 10px 20px;
     display: block;
@@ -146,7 +150,7 @@ header .user-actions a img {
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #333;
+    background-color: #1f0818;
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
@@ -154,7 +158,7 @@ header .user-actions a img {
 }
 
 .search-bar button:hover {
-    background-color: #555;
+    background-color: #571643;
 }
 
 /* Product listing section */
