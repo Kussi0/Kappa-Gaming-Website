@@ -5,22 +5,25 @@
     box-sizing: border-box;
 }
 
-/* Header Styling */
+/* Flexbox for header layout */
 header {
-    background-color: #1e1e1e; /* Dark bachground */
-    color: #fff; /* White text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    background-color: #1e1e1e;
 }
 
-/* Logo and User Actions */
-header .logo {
-    display: inline-block;
-    font-size: 24px;
-    font-weight: bold;
+/* Flexbox for right section (User actions + navigation) */
+.header-right {
+    display: flex;
+    align-items: center;
 }
 
+/* User actions */
 header .user-actions {
-    float: right;
+    display: flex;
+    margin-right: 20px; /* space between actions and navigation*/
 }
 
 header .user-actions a {
@@ -29,27 +32,49 @@ header .user-actions a {
     text-decoration: none;
 }
 
-/* Navigation Bar */
-.navi-menu {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    padding: 10px;
+/* navigation button */
+.nav-button {
     background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-header .navi-menu a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
+/* dropdown menu styling */
+.dropdown-menu {
+    list-style-type: none;
+    background-color: #444;
+    position: absolute; /* below the button */
+    right: 0;
+    display: none; /* hide the dropdown */
+    padding: 10px;
+    margin: 0;
     border-radius: 5px;
 }
 
-.navi-menu a:hover {
+.dropdown-menu li {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a:hover {
     background-color: #555;
 }
 
+/* show dropdown menu on hover */
+.navi-menu:hover .dropdown-menu {
+    display: block; /* show the dropdown menu when hovering over the button */
+}
 /* Hero/banner section */
 .hero {
     background-image: url('Purple.jpg'); /* Replace with real banner */
@@ -70,16 +95,18 @@ header .navi-menu a {
 .hero-content h2 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #112179;
 }
 
 .hero-content p {
     font-size: 24px;
     font-weight: 30px;
+    color: #112179;
 }
 
 .hero-content button {
     background-color: #81227d;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 15px 20px;
     border: none;
     border-radius: 5px;
@@ -135,9 +162,10 @@ header .navi-menu a {
 }
 
 .product img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background-color: #f9f9f9;
 }
 
 .product h3 {
@@ -155,6 +183,7 @@ header .navi-menu a {
     font-weight: bold;
     color: #ff5722;
 }
+
 
 /* Footer styling */
 footer {
