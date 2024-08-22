@@ -57,7 +57,9 @@ header .navi-menu a {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 20px;
+    height: 80vh; 
+    max-height: 100vh;
 }
 
 .hero-content h2 {
