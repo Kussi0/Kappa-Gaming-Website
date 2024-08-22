@@ -62,20 +62,26 @@ header .navi-menu a {
 
 .hero-content h2 {
     font-size: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 15px;
+    font-weight: 300;
 }
 
 .hero-content button {
-    background-color: #ff5722;
+    background-color: #81227d;
     color: white;
-    padding: 15px 30px;
+    padding: 15px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 15px;
 }
 
 .hero-content button:hover {
-    background-color: #e64a19;
+    background-color: #d374be;
 }
 
 /* Search Bar Section */
