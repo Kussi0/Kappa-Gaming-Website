@@ -91,6 +91,7 @@ header .user-actions a img {
 .navi-menu:hover .dropdown-menu {
     display: block; /* show the dropdown menu when hovering over the button */
 }
+
 /* Hero/banner section */
 .hero {
     background-image: url('Purple.jpg'); /* Replace with real banner */
@@ -99,39 +100,81 @@ header .user-actions a img {
     color: white;
     text-align: center;
     padding: 100px 20px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* hero content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: inline-block;
+    margin: auto;
+}
+
+/* header text styling */
+.hero-content h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ff007f, #7a00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 1600px) {
     .hero {
-        padding: 150px 20px;
         height: 500px;
     }
 }
 
-.hero-content h2 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #112179;
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-content h2,
 .hero-content p {
-    font-size: 24px;
-    font-weight: 30px;
-    color: #112179;
-}
-
-.hero-content button {
-    background-color: #81227d;
-    color: rgb(255, 255, 255);
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-.hero-content button:hover {
-    background-color: #d374be;
+    animation: fadeIn 1s ease-out;
 }
 
 /* Search Bar Section */
