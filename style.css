@@ -5,13 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Logo styling */
+.logo img {
+    height: 60px;
+    width: auto;
+}
+
 /* Flexbox for header layout */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1e1e1e;
+    background-color: #1f0818;
 }
 
 /* Flexbox for right section (User actions + navigation) */
@@ -23,13 +29,14 @@ header {
 /* User actions */
 header .user-actions {
     display: flex;
-    margin-right: 20px; /* space between actions and navigation*/
+    margin-right: 45px; /* space between actions and navigation*/
 }
 
 header .user-actions a {
-    margin-left: 20px;
+    margin-left: 25px;
     color: #fff;
     text-decoration: none;
+    font-family: sans-serif;
 }
 
 /* navigation button */
