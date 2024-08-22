@@ -52,24 +52,28 @@ header .navi-menu a {
 
 /* Hero/banner section */
 .hero {
-    width: 100%;
-    height: 400px;
     background-image: url('Purple.jpg'); /* Replace with real banner */
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     color: white;
     text-align: center;
+    padding: 100px 20px;
+}
+
+@media (min-width: 1600px) {
+    .hero {
+        padding: 150px 20px;
+    }
 }
 
 .hero-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .hero-content p {
-    font-size: 15px;
-    font-weight: 300;
+    font-size: 24px;
+    font-weight: 30px;
 }
 
 .hero-content button {
