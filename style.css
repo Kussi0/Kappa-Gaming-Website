@@ -138,7 +138,7 @@ header .user-actions a {
     color: white;
     border: none;
     border-radius: 0 5px 5px 0;
-    cusor: pointer
+    cursor: pointer
 }
 
 .search-bar button:hover {
