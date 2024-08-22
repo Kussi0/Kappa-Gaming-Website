@@ -1,0 +1,53 @@
+<!-- Navigation Menu with Icon -->
+<div class="navi-menu">
+    <a href="#">
+        <img src="menu-icon.png" alt="Menu Icon">
+    </a>
+    <ul class="dropdown-menu">
+        <li><a href="#campaigns">Campaigns</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#monitors">Monitors</a></li>
+        <li><a href="#accessories">PC Accessories</a></li>
+        <li><a href="#chairs">Gaming Chairs</a></li>
+    </ul>
+</div>
+
+/* Menu Icon Styling */
+.navi-menu a img {
+    height: 24px; /* Adjust icon size as needed */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+  }
+  
+  /* Dropdown Menu Styling */
+  .dropdown-menu {
+    list-style-type: none;
+    background-color: #444;
+    position: absolute;
+    right: 0; /* Align dropdown to the right */
+    display: none; /* Initially hide the dropdown */
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #555;
+  }
+  
+  /* Show Dropdown Menu on Hover */
+  .navi-menu:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu when hovering over the icon */
+  }

@@ -29,25 +29,28 @@ header {
 /* User actions */
 header .user-actions {
     display: flex;
-    margin-right: 45px; /* space between actions and navigation*/
+    align-items: center;
+    margin-right: 20px; /* space between actions and navigation*/
 }
 
-header .user-actions a {
-    margin-left: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-family: sans-serif;
-}
-
-/* navigation button */
-.nav-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+header .user-actions a img {
+    height: 30px; /* Adjust icon size */
+    width: auto; /* Maintain aspect ratio */
+    margin-left: 20px; /* space between icons */
     cursor: pointer;
-    font-size: 16px;
+}
+
+/* navigation icon styling */
+.navi-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navi-menu a img {
+    height: 30px; /* Adjust icon size */
+    width: auto; /* Maintain aspect ratio */
+    cursor: pointer;
 }
 
 /* dropdown menu styling */
@@ -60,10 +63,12 @@ header .user-actions a {
     padding: 10px;
     margin: 0;
     border-radius: 5px;
+    min-width: 200px;
+    z-index: 1000;
 }
 
 .dropdown-menu li {
-    margin-bottom: 10px;
+    margin-bottom: 0;
 }
 
 .dropdown-menu li a {
