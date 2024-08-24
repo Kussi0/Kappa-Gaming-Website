@@ -107,14 +107,15 @@
         </div>
 
         <!-- newsletter signup form -->
-        <section class="newsletter">
+        <form action="/subscribe" method="POST">
             <div class="newsletter-container">
                 <h2>Subscribe to our newsletter</h2>
                 <p>Stay updated with the latest news and offers</p>
-                <input type="email" placeholder="Enter your email">
-                <button>Subscribe</button>
+                <label for="newsletter-email">Email Adress</label>
+                <input type="email" id="newsletter-email" name="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
             </div>
-        </section>
+        </form>
 
         <!-- back to topp button -->
         <button id="back-to-top" title="Back to top">&uarr;</button>
