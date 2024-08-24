@@ -94,7 +94,7 @@ header .user-actions a img {
 
 /* Hero/banner section */
 .hero {
-    background-image: url('Purple.jpg'); /* Replace with real banner */
+    background-image: url('images/Purple.jpg'); /* Replace with real banner */
     background-size: cover;
     background-position: center center;
     color: white;
