@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
     <script src="js/hello-world.js"></script>
 
     <!-- Extra Header (Top bar) -->
@@ -24,33 +23,40 @@
             <img src="images/Group (1).jpg" alt="Kappa Gaming Logo">
         </div>
 
-        <!-- User actions and navigation button -->
-        <div class="header-right">
-            <div class="user-actions">
-                <a href="#wishlist">
-                    <img src="images/Likes100.png" alt="Wishlist Icon">
-                </a>
-                <a href="#account">
-                    <img src="images/Account100.png" alt="Account Icon">
-                </a>
-                <a href="#cart">
-                    <img src="images/Cart100.png" alt="Shopping Cart Icon">
-                </a>
-            </div>
+        <!-- Navigation menu with icon -->
+        <div class="navi-menu">
+            <a href="#">
+                <img src="images/MenuTEST100.png" alt="Menu Icon">
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#champaigns">Champaigns</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#monitors">Monitors</a></li>
+                <li><a href="#accessories">PC Accessories</a></li>
+                <li><a href="#chairs">Gaming chairs</a></li>
+            </ul>
+        </div>
+        
+        <!-- Search bar -->
+        <section class="search-bar">
+            <form action="/search" method="GET">
+                <input type="text" id="search-query" placeholder="Search for products, categories, or brands..." autocomplete="search" required>
+                <button type="submit">Search</button>
+            </form>
+        </section>  
+    </div>
 
-            <!-- Navigation menu with icon -->
-            <div class="navi-menu">
-                <a href="#">
-                    <img src="images/MenuTEST100.png" alt="Menu Icon">
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#champaigns">Champaigns</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#monitors">Monitors</a></li>
-                    <li><a href="#accessories">PC Accessories</a></li>
-                    <li><a href="#chairs">Gaming chairs</a></li>
-                </ul>
-            </div>
+        <!-- User actions and navigation button -->
+        <div class="user-actions">
+            <a href="#wishlist">
+                <img src="images/Likes100.png" alt="Wishlist Icon">
+            </a>
+            <a href="#account">
+                <img src="images/Account100.png" alt="Account Icon">
+            </a>
+            <a href="#cart">
+                <img src="images/Cart100.png" alt="Shopping Cart Icon">
+            </a>
         </div>
     </header>
 
@@ -61,14 +67,6 @@
                 <h2>Don't cap your gaming gear</h2>
                 <p>Find the best gear for your ultimate gaming setup</p>
             </div>
-        </section>
-
-        <!-- Search bar -->
-        <section class="search-bar">
-            <form action="/search" method="GET">
-                <input type="text" id="search-query" placeholder="Search for products, categories, or brands..." autocomplete="search" required>
-                <button type="submit">Search</button>
-            </form>
         </section>
 
         <!-- Product listing -->
