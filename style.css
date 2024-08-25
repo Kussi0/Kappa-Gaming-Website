@@ -308,41 +308,50 @@ footer {
     color: #fff;
 }
 
+/* Newsletter Section */
 .newsletter {
-    background-color: #1e1e1e;
+    background-color: #f4f4f4; /* Light background color for contrast */
     padding: 40px 0;
-    text-align: center;
+    text-align: center; /* Center align text inside */
 }
 
 .newsletter-container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Fixed width or maximum width */
+    margin: 0 auto; /* Center align container */
     padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
+/* Styling for form elements */
 .newsletter h2 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #1e1e1e;
-    font-family: sans-serif;
+    color: #333; /* Ensure text is visible */
 }
 
 .newsletter p {
     font-size: 16px;
     margin-bottom: 20px;
-    color: #1e1e1e;
-    font-family: sans-serif;
+    color: #555; /* Ensure text is visible */
+}
+
+.newsletter label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333; /* Ensure text is visible */
 }
 
 .newsletter input[type="email"] {
     padding: 10px;
-    width: calc(100% - 22px);
+    width: calc(100% - 22px); /* Full width minus padding */
     border: 2px solid #ccc;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    color: #333; /* Ensure text is visible inside input */
 }
 
 .newsletter button {
