@@ -100,18 +100,18 @@ header .search-bar {
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #693f5d;
-    color: rgb(255, 255, 255);
+    background-color: #1f0818;
+    color: white;
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #8a5d7d;
+    background-color: #571643;
 }
 
-@media (max-width: 718px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         align-items: center;
@@ -142,23 +142,6 @@ header .search-bar {
 
     .search-bar button {
         padding: 8px 16px;
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .search-bar {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .search-bar input {
-        border-radius: 5px 5px 0 0 ;
-        margin-bottom: 5px;
-    }
-
-    .search-bar button {
-        border-radius: 0 0 5px 5px;
     }
 }
 
