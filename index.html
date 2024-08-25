@@ -11,6 +11,13 @@
 
     <script src="js/hello-world.js"></script>
 
+    <!-- Extra Header (Top bar) -->
+    <div class="top-bar">
+        <p><i class="fas fa-truck"></i> Free shipping on orders over $50!</p>
+        <p><i class="fas fa-undo"></i> 50 days right of return!</p>
+        <p><i class="fas fa-headset"></i> <a href="#customer-service">Customer Service</a></p>
+    </div>
+
     <header>
         <!-- Logo/website name as image -->
         <div class="logo">
@@ -59,8 +66,8 @@
         <!-- Search bar -->
         <section class="search-bar">
             <form action="/search" method="GET">
-                <input type="text" id="search-query" placeholder="Search for products, categories, or brands..." autocomplete="search">
-                <button type="subtmit">Search</button>
+                <input type="text" id="search-query" placeholder="Search for products, categories, or brands..." autocomplete="search" required>
+                <button type="submit">Search</button>
             </form>
         </section>
 
@@ -115,7 +122,7 @@
                     <h2>Subscribe to our newsletter</h2>
                     <p>Stay updated with the latest news and offers</p>
                     <label for="newsletter-email">Email Address</label>
-                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" autocomplete="email">
+                    <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" autocomplete="email" required>
                     <button type="submit">Subscribe</button>
                 </div>
             </form>
