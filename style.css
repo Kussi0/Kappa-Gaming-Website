@@ -100,18 +100,18 @@ header .search-bar {
 
 .search-bar button {
     padding: 10px 20px;
-    background-color: #1f0818;
-    color: white;
+    background-color: #693f5d;
+    color: rgb(255, 255, 255);
     border: none;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
 
 .search-bar button:hover {
-    background-color: #571643;
+    background-color: #8a5d7d;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 718px) {
     header {
         flex-direction: column;
         align-items: center;
